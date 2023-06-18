@@ -11,9 +11,22 @@ function App() {
       <CssExterno />
       <CssInline />
       <ul>
-        <li>Con Javascript (styled components)</li>
-        <li>Preprocesadores (SASS)</li>
-        <li>Frameworks de estilos</li>
+        <li>
+          Con Javascript{" "}
+          <a href="https://styled-components.com/docs/basics#getting-started">
+            (styled components)
+          </a>
+        </li>
+        <li>
+          Preprocesadores{" "}
+          <a href="https://create-react-app.dev/docs/adding-a-sass-stylesheet/">
+            (SASS)
+          </a>
+        </li>
+        <li>
+          <a href="https://desarrolloweb.com/colecciones/frameworks-css"></a>
+          Frameworks de estilos
+        </li>
       </ul>
     </>
   );
