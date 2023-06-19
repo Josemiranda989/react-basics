@@ -3,7 +3,7 @@ import FunctionalComponent from "./components/FunctionalComponent";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Styling } from "./components/Styling";
 
-import { Routes, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 import "./App.css";
 
@@ -11,20 +11,21 @@ function App() {
   return (
     <>
       <Navbar />
-      <Routes>
+      <Switch>
         <Route
           path="/"
-          element={
+          exact
+          render={() => (
             <>
               <h1>This is the home page</h1>
             </>
-          }
+          )}
         />
 
-        <Route path="/styles" element={<Styling />} />
-        <Route path="/class" element={<ClassComponent />} />
-        <Route path="/functional" element={<FunctionalComponent />} />
-      </Routes>
+        <Route path="/styles" component={Styling} />
+        <Route path="/class" component={ClassComponent} />
+        <Route path="/functional" component={FunctionalComponent} />
+      </Switch>
     </>
   );
 }
