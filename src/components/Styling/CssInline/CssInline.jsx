@@ -2,10 +2,11 @@
 export const CssInline = () => {
     const character = {
       display: "block",
-      border: "1px solid salmon",
+      border: "1px solid skyblue",
       height: "auto",
       padding: "10px",
       width: "90%",
+      backgroundColor: "#f0d9ab",
     };
 
     const character__header = {

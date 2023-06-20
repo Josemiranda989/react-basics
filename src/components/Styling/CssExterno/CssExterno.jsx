@@ -2,7 +2,7 @@ import './styles.css'
 
 export const CssExterno = () => {
   return (
-    <div className="card">
+    <div className="cardE">
       <div className="card--header">
         <h1>CSS EXTERNAL</h1>
       </div>

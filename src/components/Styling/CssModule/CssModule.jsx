@@ -1,7 +1,7 @@
 import card from "./card.module.css"
 export const CssModule = () => {
   return (
-    <div className={card.card}>
+    <div className={card.cardM}>
       <div className={card.cardHeader}>
         <h1>CSS Module</h1>
       </div>
