@@ -16,7 +16,7 @@ class ClassComponent extends Component {
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         this.setState({ characters: data });
       });
   }
@@ -27,7 +27,7 @@ class ClassComponent extends Component {
     return (
       <>
         <h2>Class Component</h2>
-        <div className="card-container" style={{ backgroundColor: "green" }}>
+        <div className="card-container" style={{ backgroundColor: "#A0C49D" }}>
           {characters.map((character) => (
             <div key={character.id} className="card">
               <img src={character.image} alt={character.name} />

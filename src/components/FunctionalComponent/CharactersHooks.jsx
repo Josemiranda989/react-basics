@@ -7,7 +7,6 @@ function FunctionalComponent() {
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setCharacters(data);
       });
   };
@@ -19,7 +18,7 @@ function FunctionalComponent() {
   return (
     <>
       <h2>Functional Component with Hooks</h2>
-      <div className="card-container" style={{ backgroundColor: "tomato" }}>
+      <div className="card-container" style={{ backgroundColor: "#E1ECC8" }}>
         {characters.map((character) => (
           <div key={character.id} className="card">
             <img src={character.image} alt={character.name} />
