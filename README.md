@@ -1,8 +1,9 @@
 # Highlights de Modulo React
 
-## Papar Information
+## Information
 
 - Title: `React vite app`
+- Description: `App creada para mostrar puntos importantes del modulo react`
 - Authors: `Josemiranda989 & Dani Fuentes`
 
 ## Install & Dependence
